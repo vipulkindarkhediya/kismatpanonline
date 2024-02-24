@@ -31,11 +31,11 @@
                         <form action="{{ route('register') }}" method="POST" enctype="multipart/form-data">
                             @csrf
                             <div class="control-group">
-                                <label for="f_name">First Name</label>
-                                <input type="text" class="form-control border border-dark rounded mb-2" id="f_name"
-                                    name="f_name" value="{{ old('f_name') }}" placeholder="Enter your name" />
-                                @if ($errors->has('f_name'))
-                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('f_name') }}</div>
+                                <label for="name">First Name</label>
+                                <input type="text" class="form-control border border-dark rounded mb-2" id="name"
+                                    name="name" value="{{ old('name') }}" placeholder="Enter your name" />
+                                @if ($errors->has('name'))
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('name') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">

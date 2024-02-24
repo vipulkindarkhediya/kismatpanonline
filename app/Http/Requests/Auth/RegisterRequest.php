@@ -32,8 +32,8 @@ class RegisterRequest extends FormRequest
             'dob' => ['required', 'date'],
             'gender' => ['required', 'in:male,female,others'],
             'password' => ['required', 'confirmed', Rules\Password::defaults(), 'min:8', 'regex:/[@$!%*#?&]/'],
-            'address' => ['required'],
-            'image' => ['required'],
+            'address' => ['required', 'min:10', 'max:50'],
+            'image' => ['required', 'image', 'mimes:jpeg,png,jpg', 'max:2048'],
         ];
     }
 
@@ -67,10 +67,18 @@ class RegisterRequest extends FormRequest
             'gender.required' => 'Please select your gender',
             'gender.in' => 'please select valid your gender select',
             'dob.required' => 'Please enter your birth date',
-            'password.required' => 'Please enter your password',
-            
+            'password.required' => 'please enter your password',
+            'password.regex' => 'password please use special characters enter ',
+            'password.min' => 'please enter your password min 8 enter',
+            'password.confirmed' => 'please enter your  same password',
             'address.required' => 'Please enter your address',
-            'image.required' => 'Please select your profile picture',
+            'address.min' => 'please enter a address min 10 characters',
+            'address.max' => 'please enter a address max 50 characters',
+            'image.required' => 'please select your profile picture',
+            'image.image' => 'please enter valid your profile picture',
+            'image.mimes' => 'please enter your profile picture jpeg,png,jpg formate',
+            'image.max' => 'please enter your profile picture Max 2 MB',
+
 
 
 
