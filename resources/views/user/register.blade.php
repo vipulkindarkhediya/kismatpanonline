@@ -35,7 +35,7 @@
                                 <input type="text" class="form-control border border-dark rounded mb-2" id="f_name"
                                     name="f_name" value="{{ old('f_name') }}" placeholder="Enter your name" />
                                 @if ($errors->has('f_name'))
-                                    <div class="alert alert-danger">{{ $errors->first('f_name') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('f_name') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -44,7 +44,7 @@
                                     name="m_name" value="{{ old('m_name') }}"
                                     placeholder="Enter your father / Husband name" />
                                 @if ($errors->has('m_name'))
-                                    <div class="alert alert-danger">{{ $errors->first('m_name') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('m_name') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -52,7 +52,7 @@
                                 <input type="text" class="form-control border border-dark rounded mb-2" id="l_name"
                                     name="l_name" value="{{ old('l_name') }}" placeholder="Enter your surname" />
                                 @if ($errors->has('l_name'))
-                                    <div class="alert alert-danger">{{ $errors->first('l_name') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('l_name') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -61,7 +61,7 @@
                                     name="email" value="{{ old('email') }}" placeholder="Enter your email address" />
 
                                 @if ($errors->has('email'))
-                                    <div class="alert alert-danger">{{ $errors->first('email') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('email') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -69,7 +69,7 @@
                                 <input type="tel" class="form-control border border-dark rounded mb-2" id="contact"
                                     name="contact" value="{{ old('contact') }}" placeholder="Enter your contact number" />
                                 @if ($errors->has('contact'))
-                                    <div class="alert alert-danger">{{ $errors->first('contact') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('contact') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -77,7 +77,7 @@
                                 <input type="date" class="form-control border border-dark rounded mb-2" id="dob"
                                     name="dob" value="{{ old('dob') }}" placeholder="Enter your surname" />
                                 @if ($errors->has('dob'))
-                                    <div class="alert alert-danger">{{ $errors->first('dob') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('dob') }}</div>
                                 @endif
                             </div>
                             <div class="control-group mb-2">
@@ -99,7 +99,7 @@
                                     <label class="form-check-label text-dark" for="other">other</label>
                                 </div>
                                 @if ($errors->has('gender'))
-                                    <div class="alert alert-danger">{{ $errors->first('gender') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('gender') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -108,7 +108,7 @@
                                     id="password" name="password" placeholder="Enter your password" />
 
                                 @if ($errors->has('password'))
-                                    <div class="alert alert-danger">{{ $errors->first('password') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('password') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -118,7 +118,7 @@
                                     placeholder="Enter your password confirmation" />
 
                                 @if ($errors->has('password_confirmation'))
-                                    <div class="alert alert-danger">{{ $errors->first('password_confirmation') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('password_confirmation') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -126,7 +126,7 @@
                                 <textarea class="form-control border border-dark rounded mb-2" rows="6" id="address" name="address"
                                     value="{{ old('address') }}" placeholder="Enter your address"></textarea>
                                 @if ($errors->has('address'))
-                                    <div class="alert alert-danger">{{ $errors->first('address') }}</div>
+                                    <div class="alert alert-danger text-lowercase">{{ $errors->first('address') }}</div>
                                 @endif
                             </div>
                             <div class="control-group">
@@ -135,7 +135,7 @@
                                     <input class="form-control form-control-sm" id="image" name="image"
                                         type="file" value="{{ old('image') }}">
                                     @if ($errors->has('image'))
-                                        <div class="alert alert-danger">{{ $errors->first('image') }}</div>
+                                        <div class="alert alert-danger text-lowercase">{{ $errors->first('image') }}</div>
                                     @endif
                                 </div>
                             </div>

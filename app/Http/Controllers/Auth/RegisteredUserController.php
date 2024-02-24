@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\View\View;
 use App\Http\Requests\Auth\RegisterRequest;
+use Illuminate\Http\Request;
+
 
 class RegisteredUserController extends Controller {
     /**
@@ -28,6 +30,8 @@ class RegisteredUserController extends Controller {
      */
     public function store(RegisterRequest $request): RedirectResponse
     {
+        dd($request->all());
+        exit;
 
         $user = User::create([
             'name' => $request->name,
